@@ -1,0 +1,70 @@
+.experience-container {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 6s ease-in-out, visibility 6s ease-in-out;
+  font-family: Droid Sans;
+  color: white;
+  width: 80%;
+}
+
+.experience-container.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.experience-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.experience-header {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.experience-card {
+  border: 2px solid black;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  border-color: black;
+  max-width: calc(50% - 32px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+
+.company-logo {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.experience-details {
+  margin-top: 8px;
+}
+
+.experience-summary {
+  margin-top: 16px;
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .experience-card {
+    max-width: calc(100% - 32px);
+  }
+}

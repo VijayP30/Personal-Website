@@ -1,0 +1,74 @@
+.projects-container {
+    margin-top: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 10s ease-in-out, visibility 10s ease-in-out;
+    font-family: Droid Sans;
+    color: white;
+    width: 80%;
+  }
+  
+  .projects-container.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .projects-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .projects-header {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  
+  .project-card {
+    border: 2px solid black;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    border-color: black;
+    max-width: calc(50% - 32px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .github-icon {
+    margin-left: 8px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  .github-icon:hover {
+    color: #007BFF;
+
+  }
+  
+  .project-details {
+    margin-top: 8px;
+  }
+  
+  .project-summary {
+    margin-top: 16px;
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  @media (max-width: 600px) {
+    .project-card {
+      max-width: calc(100% - 32px);
+    }
+  }
+  

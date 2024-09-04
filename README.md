@@ -2,6 +2,8 @@
 
 This is the source code for my personal website. The website showcases my projects, experience, and other personal information. It also includes a page that stores and visualizes my running data, which is coming soon.
 
+The website is being depolyed by Vercel and hosted [here](https://pranav-vijay.vercel.app/)
+
 ## Table of Contents
 
 - [Description](#description)

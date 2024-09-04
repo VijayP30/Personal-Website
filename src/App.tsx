@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/header/header";
 import Projects from "./components/projects/projects";
-import { NAME, TYPE_DELAY } from "./constants";
 import Experience from "./components/experience/experience";
 import Footer from "./components/footer/footer";
+import { Analytics } from "@vercel/analytics/react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NAME, TYPE_DELAY } from "./constants";
 import { faRunning } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Experience visible={typingFinished} />
         <Projects visible={typingFinished} />
         <Footer />
+        <Analytics />
       </div>
     </div>
   );

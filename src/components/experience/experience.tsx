@@ -49,7 +49,7 @@ const Experience: React.FC<{ visible: boolean }> = ({ visible }) => {
         <ExperienceCard
           companyLogo={hp}
           roleName={"Software Engineer Intern"}
-          companyName={"Advanced Micro Devices, Inc."}
+          companyName={"HP Inc."}
           link={"https://www.hp.com/"}
           dates={"September 2023 - May 2024"}
           summary={[

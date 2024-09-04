@@ -59,4 +59,4 @@ This will start the application on `http://localhost:3000`.
 
 For any inquiries, please contact me at:
 - Email: vijpran@gmail.com
-- GitHub: [VijayP30](https://github.com/VijayP30
+- GitHub: [VijayP30](https://github.com/VijayP30)

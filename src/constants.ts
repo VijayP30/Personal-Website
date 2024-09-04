@@ -1,4 +1,4 @@
-var NAME = 'Pranav Vijay';
+var NAME = "Pranav Vijay";
 
 var TYPE_DELAY = 80;
 

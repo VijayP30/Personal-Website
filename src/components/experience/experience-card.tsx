@@ -1,5 +1,5 @@
-import React from 'react';
-import './styles.css';
+import React from "react";
+import "./styles.css";
 
 interface ExperienceCardProps {
   companyLogo: string;
@@ -11,11 +11,23 @@ interface ExperienceCardProps {
   skills: string[];
 }
 
-const ExperienceCard: React.FC<ExperienceCardProps> = ({ companyLogo, roleName, companyName, link, dates, summary, skills }) => {
+const ExperienceCard: React.FC<ExperienceCardProps> = ({
+  companyLogo,
+  roleName,
+  companyName,
+  link,
+  dates,
+  summary,
+  skills,
+}) => {
   return (
     <div className="experience-card">
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <img src={companyLogo} alt={`${companyName} logo`} className="company-logo" />
+        <img
+          src={companyLogo}
+          alt={`${companyName} logo`}
+          className="company-logo"
+        />
       </a>
       <div className="experience-details">
         <h2>{roleName}</h2>
@@ -29,11 +41,13 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ companyLogo, roleName, 
       </ul>
       <div className="experience-skills">
         {skills.map((skill, index) => (
-          <span key={index} className="skill-bubble">{skill}</span>
+          <span key={index} className="skill-bubble">
+            {skill}
+          </span>
         ))}
       </div>
     </div>
   );
-}
+};
 
 export default ExperienceCard;

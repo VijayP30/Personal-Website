@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import { AiFillGithub } from "react-icons/ai";
-import './styles.css';
+import "./styles.css";
 
 interface ProjectCardProps {
   name: string;
@@ -9,12 +9,22 @@ interface ProjectCardProps {
   skills: string[];
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ name, link, summary, skills }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  name,
+  link,
+  summary,
+  skills,
+}) => {
   return (
     <div className="project-card">
       <h2 className="project-name">
         {name}
-        <a href={link} target="_blank" rel="noopener noreferrer" className="project-link">
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-link"
+        >
           <AiFillGithub className="github-icon" />
         </a>
       </h2>
@@ -25,11 +35,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, link, summary, skills }
       </ul>
       <div className="project-skills">
         {skills.map((skill, index) => (
-          <span key={index} className="skill-bubble">{skill}</span>
+          <span key={index} className="skill-bubble">
+            {skill}
+          </span>
         ))}
       </div>
     </div>
   );
-}
+};
 
 export default ProjectCard;

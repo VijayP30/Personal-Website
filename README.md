@@ -39,14 +39,6 @@ To run this project locally, follow these steps:
     npm install
 
 ## Usage
-To start the development server, run:
-    ```bash
-    npm start
-
-Sure, here is the corrected markdown for the "Usage" section onwards:
-
-```markdown
-## Usage
 
 To start the development server, run:
 ```bash

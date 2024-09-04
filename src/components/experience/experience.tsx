@@ -22,6 +22,7 @@ const Experience: React.FC<{ visible: boolean }> = ({ visible }) => {
                         'Streamlined the MongoDB triggers UI using React, boosting user efficiency and driving higher adoption rates',
                         'Implemented state management using Redux across MongoDB App and Data Services improving performance',
                     ]} 
+                    skills={['Go', 'TypeScript', 'JavaScript', 'Babel', 'NodeJS', 'React', 'Redux']}
                 />
                 <ExperienceCard 
                     companyLogo={amd} 
@@ -36,6 +37,7 @@ const Experience: React.FC<{ visible: boolean }> = ({ visible }) => {
                         'Owned and maintained a test program validation module that reduced test time by up to 20% in production',
 
                     ]} 
+                    skills={['Java', 'Python', 'Spring', 'Artifactory']}
                 />
                 <ExperienceCard 
                     companyLogo={hp} 
@@ -48,7 +50,8 @@ const Experience: React.FC<{ visible: boolean }> = ({ visible }) => {
                         'Designed REST APIs with Flask to reboot software upon Grafana alerts, eliminating application downtime',
                         'Orchestrated automatic deployment of applications using Ansible, reducing human configuration error to 0%',
                         'Set up Oracle Databases using SQL to automatically populate data warehouses with resource utilization data',
-                    ]} 
+                    ]}
+                    skills={['Python', 'Flask', 'RESTful API', 'Ansible', 'Grafana', 'Elastic (ELK) Stack', 'Oracle SQL']}
                 />
                 <ExperienceCard 
                     companyLogo={amd} 
@@ -61,6 +64,7 @@ const Experience: React.FC<{ visible: boolean }> = ({ visible }) => {
                         'Added temperature controls to AVFS modules using Java, allowing for more comprehensive test coverage',
                         'Created a full-stack web app using Flask, allowing engineers to override product specific configs for testing',
                     ]} 
+                    skills={['Java', 'Python', 'Flask', 'Test Automation', 'Product Development']}
                 />
             </div>
         </div>

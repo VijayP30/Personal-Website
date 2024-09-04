@@ -8,9 +8,10 @@ interface ExperienceCardProps {
   link: string;
   dates: string;
   summary: string[];
+  skills: string[];
 }
 
-const ExperienceCard: React.FC<ExperienceCardProps> = ({ companyLogo, roleName, companyName, link, dates, summary }) => {
+const ExperienceCard: React.FC<ExperienceCardProps> = ({ companyLogo, roleName, companyName, link, dates, summary, skills }) => {
   return (
     <div className="experience-card">
       <a href={link} target="_blank" rel="noopener noreferrer">
@@ -26,6 +27,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ companyLogo, roleName, 
           <li key={index}>{item}</li>
         ))}
       </ul>
+      <div className="experience-skills">
+        {skills.map((skill, index) => (
+          <span key={index} className="skill-bubble">{skill}</span>
+        ))}
+      </div>
     </div>
   );
 }

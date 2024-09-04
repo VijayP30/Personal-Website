@@ -6,9 +6,10 @@ interface ProjectCardProps {
   name: string;
   link: string;
   summary: string[];
+  skills: string[];
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ name, link, summary }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ name, link, summary, skills }) => {
   return (
     <div className="project-card">
       <h2 className="project-name">
@@ -22,6 +23,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, link, summary }) => {
           <li key={index}>{item}</li>
         ))}
       </ul>
+      <div className="project-skills">
+        {skills.map((skill, index) => (
+          <span key={index} className="skill-bubble">{skill}</span>
+        ))}
+      </div>
     </div>
   );
 }

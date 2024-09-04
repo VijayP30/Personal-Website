@@ -63,6 +63,21 @@
   text-align: left;
 }
 
+.experience-skills {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-bubble {
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: #333;
+}
+
 @media (max-width: 600px) {
   .experience-card {
     max-width: calc(100% - 32px);

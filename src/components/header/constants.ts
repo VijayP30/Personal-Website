@@ -1,5 +1,5 @@
 var resumeLink =
-  "https://drive.google.com/file/d/18GNSma7e6lk9Gfcx39teWedPKg0cYkq-/view?usp=sharing";
+  "https://drive.google.com/file/d/1WzVZXEd7M1--786Exgqnh3GNp9bKmGFc/view?usp=sharing";
 
 var linkedInLink = "https://www.linkedin.com/in/pranav-vijay-b01b43223";
 
